@@ -6,6 +6,6 @@ tags:
 ### Create a new post
 
 ``` bash 
-l
+hello this is a test page
 $ hexo new "My New Post"
 ```
