@@ -5,6 +5,7 @@ tags:
 ---
 ### Create a new post
 
-``` bash
+``` bash 
+l
 $ hexo new "My New Post"
 ```
