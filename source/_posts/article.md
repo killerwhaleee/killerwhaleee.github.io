@@ -22,7 +22,7 @@ BUT，rest参数只能作为函数中最后一个参数使用，即后面不能�
 
 ### ES6中函数允许有默认值
 ``` bash 
- function func(x,y='cole'){
+    function func(x,y='cole'){
       console.log(x,y);
     }
     func('dylan')    //dylan cole
@@ -42,7 +42,7 @@ BUT，rest参数只能作为函数中最后一个参数使用，即后面不能�
 
 ### 箭头函数
 ``` bash
-var f = v => v;
+    var f = v => v;
     // 相当于
     var f = function(v){
       return v;
