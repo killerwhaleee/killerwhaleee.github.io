@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="Create a new post12hello this is a test page$ hexo new &quot;My New Post&quot;">
+    <meta name="description" content="rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用123456789function add(...values)&amp;#123;  var sum &#x3D; 0;  for( item of values)&amp;#123;    sum +&#x3D; item;  &amp;#125; return sum&amp;#125;console.log( add(1,2,3,4));">
 <meta property="og:type" content="article">
-<meta property="og:title" content="article">
+<meta property="og:title" content="ES6中新增的方式方法">
 <meta property="og:url" content="http://example.com/2020/10/04/article/index.html">
 <meta property="og:site_name" content="Puzzlemars">
-<meta property="og:description" content="Create a new post12hello this is a test page$ hexo new &quot;My New Post&quot;">
+<meta property="og:description" content="rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用123456789function add(...values)&amp;#123;  var sum &#x3D; 0;  for( item of values)&amp;#123;    sum +&#x3D; item;  &amp;#125; return sum&amp;#125;console.log( add(1,2,3,4));">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-04T13:52:48.000Z">
-<meta property="article:modified_time" content="2020-10-04T06:01:32.325Z">
+<meta property="article:modified_time" content="2020-10-05T04:41:55.923Z">
 <meta property="article:author" content="killerwhaleee">
 <meta name="twitter:card" content="summary">
     
@@ -36,7 +36,7 @@
         
     
     <!-- title -->
-    <title>article</title>
+    <title>ES6中新增的方式方法</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/css/style.css">
@@ -76,8 +76,8 @@
     <span id="actions">
       <ul>
         
+        <li><a class="icon" href="/2020/10/05/hello-world/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
         
-        <li><a class="icon" href="/2020/10/04/hello-world/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
         
         <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
         <li><a class="icon" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
@@ -91,21 +91,21 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2020/10/04/article/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/10/04/article/&text=article"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/10/04/article/&is_video=false&description=article"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=article&body=Check out this article: http://example.com/2020/10/04/article/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/10/04/article/&name=article&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/10/04/article/&t=article"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/10/04/article/&text=ES6中新增的方式方法"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/10/04/article/&is_video=false&description=ES6中新增的方式方法"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ES6中新增的方式方法&body=Check out this article: http://example.com/2020/10/04/article/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/10/04/article/&name=ES6中新增的方式方法&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/10/04/article/&t=ES6中新增的方式方法"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
     <div id="toc">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.</span> <span class="toc-text">Create a new post</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rest%E5%8F%82%E6%95%B0%EF%BC%9A%E7%94%A8%E4%BA%8E%E6%8A%8A%E5%A4%9A%E4%BD%99%E7%9A%84%E5%8F%82%E6%95%B0%E6%94%BE%E5%85%A5%E6%95%B0%E7%BB%84%E9%87%8C%E9%9D%A2-rest%E5%B0%B1%E6%98%AF%E4%B8%80%E4%B8%AA%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%95%B0%E7%BB%84%EF%BC%8C%E6%95%B0%E7%BB%84%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6%E4%B8%AD%E5%87%BD%E6%95%B0%E5%85%81%E8%AE%B8%E6%9C%89%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">2.</span> <span class="toc-text">ES6中函数允许有默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-number">3.</span> <span class="toc-text">解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">箭头函数</span></a></li></ol>
     </div>
   </span>
 </div>
@@ -117,7 +117,7 @@
   <header>
     
     <h1 class="posttitle" itemprop="name headline">
-        article
+        ES6中新增的方式方法
     </h1>
 
 
@@ -144,7 +144,24 @@
   
 
   <div class="content" itemprop="articleBody">
-    <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hello this is a <span class="built_in">test</span> page</span><br><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <h3 id="rest参数：用于把多余的参数放入数组里面-rest就是一个真正的数组，数组可以使用的方法都可以使用"><a href="#rest参数：用于把多余的参数放入数组里面-rest就是一个真正的数组，数组可以使用的方法都可以使用" class="headerlink" title="rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用"></a>rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> add(...values)&#123;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  <span class="keyword">for</span>( item of values)&#123;</span><br><span class="line">    sum += item;</span><br><span class="line">  &#125;</span><br><span class="line"> <span class="built_in">return</span> sum</span><br><span class="line">&#125;</span><br><span class="line">console.log( add(1,2,3,4));  //10</span><br><span class="line">console.log(add(1,2,3,4,5));  //15</span><br></pre></td></tr></table></figure>
+<p>我们利用rest参数，可以向函数中传入任意个参数</p>
+<hr>
+<p>BUT，rest参数只能作为函数中最后一个参数使用，即后面不能跟其他参数</p>
+<h3 id="ES6中函数允许有默认值"><a href="#ES6中函数允许有默认值" class="headerlink" title="ES6中函数允许有默认值"></a>ES6中函数允许有默认值</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> func(x,y=<span class="string">&#x27;cole&#x27;</span>)&#123;</span><br><span class="line">     console.log(x,y);</span><br><span class="line">   &#125;</span><br><span class="line">   func(<span class="string">&#x27;dylan&#x27;</span>)    //dylan cole</span><br><span class="line">   func(<span class="string">&#x27;dylan&#x27;</span>,<span class="string">&#x27;babara&#x27;</span>) //dylan babara</span><br><span class="line">   func(<span class="string">&#x27;dylan&#x27;</span>,<span class="string">&#x27;&#x27;</span>) //dylan</span><br></pre></td></tr></table></figure>
+<h3 id="解构赋值"><a href="#解构赋值" class="headerlink" title="解构赋值"></a>解构赋值</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> fn(&#123;x,y=2&#125;)&#123;</span><br><span class="line">  console.log(x,y);</span><br><span class="line">&#125;</span><br><span class="line">fn(&#123;x:1&#125;);  //1 2</span><br><span class="line">fn(&#123;x:1,y:3&#125;);  //1 3</span><br><span class="line">fn(&#123;&#125;);  //undefined 2</span><br><span class="line">fn();  //Uncaught TypeError: Cannot destructure property <span class="string">&#x27;x&#x27;</span> of <span class="string">&#x27;undefined&#x27;</span> as it is undefined.</span><br></pre></td></tr></table></figure>
+
+<h3 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h3><pre><code class="bash">var f = v =&gt; v;
+    // 相当于
+    var f = function(v)&#123;
+      return v;
+    &#125;
+  // 如果箭头函数不需要参数或需要多个参数，就使用一个圆括号代表参数部分
+    var f = () =&gt; v;
+    // 相当于
+    var f = function()&#123;
+      return v;
+    &#125;</code></pre>
 
   </div>
   <div>
@@ -173,22 +190,22 @@
     </div>
 
     <div id="toc-footer" style="display: none">
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.</span> <span class="toc-text">Create a new post</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#rest%E5%8F%82%E6%95%B0%EF%BC%9A%E7%94%A8%E4%BA%8E%E6%8A%8A%E5%A4%9A%E4%BD%99%E7%9A%84%E5%8F%82%E6%95%B0%E6%94%BE%E5%85%A5%E6%95%B0%E7%BB%84%E9%87%8C%E9%9D%A2-rest%E5%B0%B1%E6%98%AF%E4%B8%80%E4%B8%AA%E7%9C%9F%E6%AD%A3%E7%9A%84%E6%95%B0%E7%BB%84%EF%BC%8C%E6%95%B0%E7%BB%84%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E7%9A%84%E6%96%B9%E6%B3%95%E9%83%BD%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">rest参数：用于把多余的参数放入数组里面 rest就是一个真正的数组，数组可以使用的方法都可以使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ES6%E4%B8%AD%E5%87%BD%E6%95%B0%E5%85%81%E8%AE%B8%E6%9C%89%E9%BB%98%E8%AE%A4%E5%80%BC"><span class="toc-number">2.</span> <span class="toc-text">ES6中函数允许有默认值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E6%9E%84%E8%B5%8B%E5%80%BC"><span class="toc-number">3.</span> <span class="toc-text">解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">箭头函数</span></a></li></ol>
     </div>
 
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2020/10/04/article/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/10/04/article/&text=article"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/10/04/article/&is_video=false&description=article"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=article&body=Check out this article: http://example.com/2020/10/04/article/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/10/04/article/&title=article"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/10/04/article/&name=article&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/10/04/article/&t=article"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2020/10/04/article/&text=ES6中新增的方式方法"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2020/10/04/article/&is_video=false&description=ES6中新增的方式方法"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=ES6中新增的方式方法&body=Check out this article: http://example.com/2020/10/04/article/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2020/10/04/article/&title=ES6中新增的方式方法"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2020/10/04/article/&name=ES6中新增的方式方法&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2020/10/04/article/&t=ES6中新增的方式方法"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
